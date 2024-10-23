@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Tani Smart</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="../dashboard/assets/img/tanismart.png" rel="icon" />
+    <link href="../dashboard/assets/img/tanismart.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="/dashboard/dashboard.html" class="logo d-flex align-items-center">
+          <span class="logo-green" style="color: #8caf50">Tani</span>
+          <span class="logo-black">Smart</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a
+            ><!-- End Notification Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-1.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Maria Hudson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-2.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Anna Nelson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>6 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-3.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>David Muldon</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>8 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+            <!-- End Messages Dropdown Items -->
+          </li>
+          <!-- End Messages Nav -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >Admin</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Admin</h6>
+                <span>Web Developer</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-faq.html"
+                >
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/dashboard/dashboard.html" >
+            <img
+              src="/dashboard/assets/img/icon0.png"
+              alt="Dashboard Icon"
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-heading">Information</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/informasiBibit/informasiBibit.html">
+            <img
+              src="/dashboard/assets/img/icon1.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Informasi Bibit</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/informasiObat/informasiObat.html">
+            <img
+              src="/dashboard/assets/img/icon2.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Informasi Obat</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/informasiPupuk/informasiPupuk.html">
+            <img
+              src="/dashboard/assets/img/icon3.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Informasi Pupuk</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+
+        <li class="nav-heading">Pages</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/siklusPertumbuhan/siklus.html">
+            <img
+              src="/dashboard/assets/img/icon4.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Siklus Pertumbuhan</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/jadwalPanen/jadwal.html">
+            <img
+              src="/dashboard/assets/img/icon5.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Jadwal Panen</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/laporanHasil/laporanhasil.html">
+            <img
+              src="/dashboard/assets/img/icon6.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Hasil Panen</span>
+          </a>
+        </li>
+        <!-- End Error 404 Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/marketplace/marketplace.html">
+            <img
+              src="/dashboard/assets/img/icon7.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>MarketPlace</span>
+          </a>
+        </li>
+        <!-- End Blank Page Nav -->
+
+        <li class="nav-heading">User</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/settingsPage/setting.html">
+            <img
+              src="/dashboard/assets/img/icon8.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Settings</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/contactUs/contact.html">
+            <img
+              src="/dashboard/assets/img/icon9.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Contact Us</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/about/about.html" style="background-color: #4CAF50; color: white;">
+            <img
+              src="/dashboard/assets/img/icon10.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>About Us</span>
+          </a>
+        </li>
+        <!-- End Error 404 Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/login/login.html">
+            <img
+              src="/dashboard/assets/img/icon11.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>LogOut</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>About Us</h1>
+      </div>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 110px;
+            height: 110px;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .intro-text h2 {
+            margin: 0;
+            color: #4a4a4a;
+        }
+        .intro-text p {
+            margin-top: 10px;
+            color: #666;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .feature {
+            flex-basis: 30%;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        .feature p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        /* Style tambahan untuk bagian "Contact Us" dan "Sosial Media" */
+        .section {
+            margin-top: 30px;
+        }
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .icon {
+            width: 20px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .section {
+      flex-basis: 20%; /* Menyesuaikan lebar setiap section */
+    }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="intro">
+                <img src="/about/assets/img/logo1.png" alt="Tani Smart Logo" class="logo">
+                <div class="intro-text">
+                    <h2><b>Selamat datang di Tani Smart</b></h2>
+                    <p>Kami berkomitmen untuk memberdayakan para petani dengan solusi pertanian pintar yang memanfaatkan teknologi modern. Dengan Tani Smart, Anda dapat mengintegrasikan teknologi dalam praktik sehari-hari, meningkatkan produktivitas, dan mengoptimalkan sumber daya. Bergabunglah dengan kami untuk mencapai hasil yang lebih baik dan wujudkan pertanian yang berkelanjutan!</p>
+                </div>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <h3><b>Melihat Proses Pertanian</b></h3>
+                    <p>TaniSmart memungkinkan petani untuk memantau setiap tahapan proses pertanian, mulai dari penanaman hingga panen, melalui tampilan data yang terupdate secara berkala.</p>
+                </div>
+                <div class="feature">
+                    <h3><b>Memperkirakan Jadwal Panen</b></h3>
+                    <p>Dengan teknologi prediktif, TaniSmart dapat memberikan estimasi waktu panen yang tepat, membantu petani merencanakan kegiatan pasca panen dengan lebih efisien.</p>
+                </div>
+                <div class="feature">
+                    <h3><b>Rekomendasi Perawatan Tanaman</b></h3>
+                    <p>TaniSmart menawarkan rekomendasi perawatan tanaman sehingga petani dapat melakukan tindakan pencegahan dan perawatan yang tepat waktu.</p>
+                </div>
+            </div>
+            <!-- Section tambahan untuk Contact Us dan Sosial Media -->
+              <!-- Bagian konten lain... -->
+              <div class="section-container">
+                <div class="section">
+                  <h2>Contact Us</h2>
+                  <ul>
+                    <li>
+                      <span class="icon">📱</span>
+                      WhatsApp: <a href="https://wa.me/6287556879991">+62 8755687991</a>
+                    </li>
+                    <li>
+                      <span class="icon">📧</span>
+                      Email: <a href="mailto:TaniSmart12@gmail.com">TaniSmart12@gmail.com</a>
+                    </li>
+                    <li>
+                      <span class="icon">📍</span>
+                      Address: Malang, Jawa Timur
+                    </li>
+                  </ul>
+                </div>
+                <div class="section">
+                  <h2>Sosial Media</h2>
+                  <ul>
+                    <li>
+                      <span class="icon">📘</span>
+                      <a href="https://facebook.com/tanismart.id">@tanismart.id</a>
+                    </li>
+                    <li>
+                      <span class="icon">📷</span>
+                      <a href="https://instagram.com/tanismart.id">@tanismart.id</a>
+                    </li>
+                    <li>
+                      <span class="icon">🐦</span>
+                      <a href="https://twitter.com/tanismart.id">@tanismart.id</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+    </body>
+    </main>
+    
+    <a href="#"class="back-to-top d-flex align-items-center justify-content-center><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

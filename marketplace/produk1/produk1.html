@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Tani Smart</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="../../dashboard/assets/img/tanismart.png" rel="icon" />
+    <link href="../dashboard/assets/img/tanismart.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="/dashboard/dashboard.html" class="logo d-flex align-items-center">
+          <span class="logo-green" style="color: #8caf50">Tani</span>
+          <span class="logo-black">Smart</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a
+            ><!-- End Notification Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-1.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Maria Hudson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-2.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Anna Nelson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>6 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-3.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>David Muldon</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>8 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+            <!-- End Messages Dropdown Items -->
+          </li>
+          <!-- End Messages Nav -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >Admin</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Admin</h6>
+                <span>Web Developer</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-faq.html"
+                >
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/dashboard/dashboard.html" >
+            <img
+              src="/dashboard/assets/img/icon0.png"
+              alt="Dashboard Icon"
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-heading">Information</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/informasiBibit/informasiBibit.html">
+            <img
+              src="/dashboard/assets/img/icon1.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Informasi Bibit</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-faq.html">
+            <img
+              src="/dashboard/assets/img/icon2.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Informasi Obat</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/informasiPupuk/informasiPupuk.html">
+            <img
+              src="/dashboard/assets/img/icon3.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Informasi Pupuk</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+
+        <li class="nav-heading">Pages</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/siklusPertumbuhan/siklus.html">
+            <img
+              src="/dashboard/assets/img/icon4.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Siklus Pertumbuhan</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/jadwalPanen/jadwal.html">
+            <img
+              src="/dashboard/assets/img/icon5.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Jadwal Panen</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/laporanHasil/laporanhasil.html">
+            <img
+              src="/dashboard/assets/img/icon6.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Hasil Panen</span>
+          </a>
+        </li>
+        <!-- End Error 404 Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="/marketplace/marketplace.html" style="background-color: #4CAF50; color: white;">
+            <img
+              src="/dashboard/assets/img/icon7.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>MarketPlace</span>
+          </a>
+        </li>
+        <!-- End Blank Page Nav -->
+
+        <li class="nav-heading">User</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/settingsPage/setting.html">
+            <img
+              src="/dashboard/assets/img/icon8.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Settings</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/contactUs/contact.html">
+            <img
+              src="/dashboard/assets/img/icon9.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Contact Us</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/about/about.html">
+            <img
+              src="/dashboard/assets/img/icon10.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>About Us</span>
+          </a>
+        </li>
+        <!-- End Error 404 Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#">
+            <img
+              src="/dashboard/assets/img/icon11.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>LogOut</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-produk {
+            background-color: #7AB87A;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        
+        .search-container {
+            flex: 1;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 4px;
+            padding: 0.5rem;
+        }
+        
+        .search-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 0.25rem;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            color: white;
+        }
+        .search-bar {
+            flex: 1;
+            margin: 0 1rem;
+            position: relative;
+            max-width: 600px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 0.5rem 2.5rem 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .icon-button {
+            background: none;
+            border: none;
+            padding: 0.25rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .header-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .product-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            padding-bottom: 50px;
+        }
+
+        .product-header {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .product-image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .rating {
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .quantity {
+            margin-bottom: 1rem;
+        }
+
+        .quantity input {
+            width: 50px;
+            padding: 0.25rem;
+            margin: 0 0.5rem;
+        }
+
+        .specifications {
+            margin-bottom: 2rem;
+        }
+
+        .spec-title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .spec-item {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .spec-label {
+            color: #666;
+            min-width: 120px;
+        }
+
+        .product-description {
+            margin-bottom: 2rem;
+        }
+
+        .reviews {
+            margin-bottom: 2rem;
+        }
+
+        .review-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .reviewer-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .cart-button, .buy-button {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .cart-button {
+            background-color: white;
+            border: 1px solid #DC3545;
+            color: #DC3545;
+        }
+
+        .buy-button {
+            background-color: #DC3545;
+            color: white;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 92%;
+            background-color: #7AB87A;
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  <header class="header-produk">
+    <div class="logo">Market Place</div>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Temukan Barang Pertanian Anda">
+        <button class="icon-button">🎤</button>
+        <button class="icon-button">📷</button>
+        <button class="icon-button">🔍</button>
+    </div>
+    <div class="header-actions">
+      <a href="/marketplace/keranjang/keranjang.html">
+          <button class="icon-button">🛒</button>
+      </a>
+      <a href="/marketplace/chatplace/chatplace.html">
+        <button class="icon-button">💬</button>
+      </a>
+  </div>
+  
+</header>
+
+    <main class="product-container">
+        <div class="product-header">
+            <img src="/marketplace/produk1/assets/img/produk1.jpg" alt="Drone Tanaman" class="product-image">
+            <div class="product-info">
+                <h1 class="product-title">Drone Tanaman Penyiram Tanaman Berkualitas Dan Bergaransi</h1>
+                <div class="rating">⭐⭐⭐⭐ 4.0 (9.435 Terjual)</div>
+                <div class="price">
+                    Rp. 1.000.000
+                    <span class="original-price">Rp. 1.200.000</span>
+                </div>
+                <div class="quantity">
+                    Jumlah: 
+                    <input type="number" min="1" value="1">
+                    <span>Sisa 12</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="specifications">
+            <h2 class="spec-title">Spesifikasi Produk</h2>
+             <ul>
+                    <li>Kapasitas: 10 L</li>
+                    <li>Waktu Terbang: 30 Menit</li>
+                    <li>Jarak: 5 KM</li>
+                    <li>Baterai: 5.000 mAh</li>
+                </ul>
+        </section>
+
+        <section class="product-description">
+            <h2 class="spec-title">Deskripsi Produk</h2>
+            <p>DJI Matric 3T Matice 3T memanfaatkan kamera Zoom resolusi tinggi serta sensor thermal infrared yang telat untuk mengoptimalkan...</p>
+        </section>
+
+        <section class="reviews">
+            <h2 class="spec-title">Penilaian Produk</h2>
+            <div class="review-item">
+                <div class="reviewer-image"></div>
+                <div class="review-content">
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>Barang sangat memuaskan kita akan sangat bermanfaat</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="action-buttons">
+            <a href="/marketplace/keranjang/keranjang.html"><button class="cart-button">Masukkan Ke Keranjang</button></a>
+            <a href="/marketplace/pemesananplace/pemesananplace.html"><button class="buy-button">Beli Sekarang</button></a>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="/marketplace/marketplace.html">
+          <div class="icon-button">🏠</div>
+      </a>
+      <a href="/marketplace/statusplace/statusplace.html">
+        <div class="icon-button">✈</div>
+      </a>
+      <a href="/marketplace/notifplace/notifplace.html">
+        <div class="icon-button">🔔</div>
+    </a>
+  </nav>
+
+    </main>
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Tani Smart</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/tanismart.png" rel="icon" />
+    <link href="assets/img/tanismart.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="/dashboard/dashboard.html" class="logo d-flex align-items-center">
+          <span class="logo-green" style="color: #8caf50">Tani</span>
+          <span class="logo-black">Smart</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a
+            ><!-- End Notification Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-1.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Maria Hudson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-2.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Anna Nelson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>6 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-3.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>David Muldon</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>8 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+            <!-- End Messages Dropdown Items -->
+          </li>
+          <!-- End Messages Nav -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >Admin</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Admin</h6>
+                <span>Web Developer</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="pages-faq.html"
+                >
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+         <li class="nav-item">
+          <a class="nav-link collapsed" href="/dashboard/dashboard.html" style="background-color: #4CAF50; color: white;">
+            <img
+              src="/dashboard/assets/img/icon0.png"
+              alt="Dashboard Icon"
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-heading">Information</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/informasiBibit/informasiBibit.html">
+            <img
+              src="/dashboard/assets/img/icon1.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Informasi Bibit</span>
+          </a>
+        </li>
+        <!-- End Profile Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/informasiObat/informasiObat.html">
+            <img
+              src="/dashboard/assets/img/icon2.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Informasi Obat</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/informasiPupuk/informasiPupuk.html">
+            <img
+              src="/dashboard/assets/img/icon3.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Informasi Pupuk</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+
+        <li class="nav-heading">Pages</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/siklusPertumbuhan/siklus.html">
+            <img
+              src="/dashboard/assets/img/icon4.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Siklus Pertumbuhan</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/jadwalPanen/jadwal.html">
+            <img
+              src="/dashboard/assets/img/icon5.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Jadwal Panen</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/laporanHasil/laporanhasil.html">
+            <img
+              src="/dashboard/assets/img/icon6.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Hasil Panen</span>
+          </a>
+        </li>
+        <!-- End Error 404 Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/marketplace/marketplace.html">
+            <img
+              src="/dashboard/assets/img/icon7.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>MarketPlace</span>
+          </a>
+        </li>
+        <!-- End Blank Page Nav -->
+
+        <li class="nav-heading">User</li>
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/settingsPage/setting.html">
+            <img
+              src="/dashboard/assets/img/icon8.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Settings</span>
+          </a>
+        </li>
+        <!-- End Register Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/contactUs/contact.html">
+            <img
+              src="/dashboard/assets/img/icon9.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>Contact Us</span>
+          </a>
+        </li>
+        <!-- End Login Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/about/about.html">
+            <img
+              src="/dashboard/assets/img/icon10.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>About Us</span>
+          </a>
+        </li>
+        <!-- End Error 404 Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/login/login.html">
+            <img
+              src="/dashboard/assets/img/icon11.png"
+              alt=""
+              style="max-width: 13%; padding-right: 10px"
+            />
+            <span>LogOut</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Dashboard</h1>
+      </div>
+      <!-- End Page Title -->
+    
+      <section class="section dashboard">
+        <div class="row">
+          <!-- Left side columns -->
+          <div class="col-lg-12">
+            <div class="row">
+              <!-- Sales Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card sales-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Perkiraan Bulan Panen</h5>
+    
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-cart"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>Januari</h6>
+                        <span class="text-muted small pt-2 ps-1">Lebih awal</span>
+                        <span class="text-success small pt-1 fw-bold">5 Hari</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Sales Card -->
+    
+              <!-- Revenue Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card revenue-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Perkiraan Total Panen</h5>
+    
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-currency-dollar"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>125 KG</h6>
+                        <span class="text-muted small pt-2 ps-1">Meningkat</span>
+                        <span class="text-success small pt-1 fw-bold">15%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Revenue Card -->
+    
+              <!-- Customers Card -->
+              <div class="col-xxl-4 col-xl-12">
+                <div class="card info-card customers-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Total Keuntungan</h5>
+    
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h3>Rp. 300.000</h3>
+                        <span class="text-muted small pt-2 ps-1">Menurun</span>
+                        <span class="text-danger small pt-1 fw-bold">12%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Customers Card -->
+              <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+                }
+        
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    background-color: #f8f9fa;
+                }
+        
+                .header {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    margin-bottom: 24px;
+                }
+        
+                .header h1 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #333;
+                }
+        
+                .search-box {
+                    flex-grow: 1;
+                    max-width: 400px;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: white;
+                    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+                    background-repeat: no-repeat;
+                    background-position: 12px center;
+                    background-size: 20px;
+                    padding-left: 40px;
+                    font-size: 14px;
+                }
+        
+                .search-box::placeholder {
+                    color: #999;
+                }
+        
+                .article-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                    gap: 24px;
+                }
+        
+                .article-card {
+                    background: white;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                    transition: transform 0.2s ease;
+                }
+        
+                .article-card:hover {
+                    transform: translateY(-4px);
+                }
+        
+                .article-image {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+        
+                .article-content {
+                    padding: 16px;
+                    text-align: center;
+                }
+        
+                .article-title {
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: #333;
+                    margin-bottom: 16px;
+                    height: 42px;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                }
+        
+                .lihat-artikel {
+                    display: inline-block;
+                    padding: 8px 24px;
+                    background: white;
+                    border: 1px solid #ddd;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    color: #666;
+                    font-size: 14px;
+                    transition: all 0.2s ease;
+                }
+        
+                .lihat-artikel:hover {
+                    background: #f8f9fa;
+                    border-color: #ccc;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>Artikel</h1>
+                    <input type="search" class="search-box" placeholder="Search Artikel">
+                </div>
+                
+                <div class="article-grid">
+                    <article class="article-card">
+                        <img src="/dashboard/assets/img/artikel1.jpg" alt="Budidaya Padi" class="article-image">
+                        <div class="article-content">
+                            <h2 class="article-title">Budidaya Padi yang Benar dan Efisien untuk Menghasilkan Panen Melimpah</h2>
+                            <a href="#" class="lihat-artikel">Lihat Artikel</a>
+                        </div>
+                    </article>
+        
+                    <article class="article-card">
+                        <img src="/dashboard/assets/img/artikel2.jpg" alt="Petani Lakukan Gropyokan" class="article-image">
+                        <div class="article-content">
+                            <h2 class="article-title">Petani Lakukan Gropyokan Tikus dengan Pengasapan untuk Selamatkan Tanaman Padi</h2>
+                            <a href="#" class="lihat-artikel">Lihat Artikel</a>
+                        </div>
+                    </article>
+        
+                    <article class="article-card">
+                        <img src="/dashboard/assets/img/artikel3.jpg" alt="Dari Sawah Menuai Hikmah" class="article-image">
+                        <div class="article-content">
+                            <h2 class="article-title">Dari Sawah Menuai Hikmah: Filosofi Menanam Padi dan Implementasinya dalam Kehidupan</h2>
+                            <a href="#" class="lihat-artikel">Lihat Artikel</a>
+                        </div>
+                    </article>
+        
+                    <article class="article-card">
+                        <img src="/dashboard/assets/img/artikel4.jpg" alt="Methil Tradisi Warisan" class="article-image">
+                        <div class="article-content">
+                            <h2 class="article-title">Methil: Tradisi Warisan Leluhur, Pesona Budaya Desa Dero yang Tak Lekang Oleh Waktu</h2>
+                            <a href="#" class="lihat-artikel">Lihat Artikel</a>
+                        </div>
+                    </article>
+        
+                    <article class="article-card">
+                        <img src="/dashboard/assets/img/artikel5.jpg" alt="Dari Sawah Menuai Hikmah" class="article-image">
+                        <div class="article-content">
+                            <h2 class="article-title">Dari Sawah Menuai Hikmah: Filosofi Menanam Padi dan Implementasinya dalam Kehidupan</h2>
+                            <a href="#" class="lihat-artikel">Lihat Artikel</a>
+                        </div>
+                    </article>
+        
+                    <article class="article-card">
+                        <img src="/dashboard/assets/img/artikel3.jpg" alt="Melestarikan Kearifan Lokal" class="article-image">
+                        <div class="article-content">
+                            <h2 class="article-title">Melestarikan Kearifan Lokal: Pesona Istilah Jawa di Sawah Desa Dero</h2>
+                            <a href="#" class="lihat-artikel">Lihat Artikel</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            </div> <!-- End .row -->
+          </div> <!-- End .col-lg-12 -->
+        </div> <!-- End .row -->
+      </section>
+    </main>    
+    <!-- End #main -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
