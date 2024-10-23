@@ -604,6 +604,18 @@
             font-size: 20px;
             font-weight: bold;
         }
+        .payment-button {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            padding: 10px;
+            background-color: #f4f7f1;
+            border-radius: 8px;
+            position: fixed;
+            bottom: 4rem; /* Adjusting to place it above the bottom navigation */
+            width: calc(100% - 250px); /* Account for sidebar width */
+            z-index: 1000;
+        }
 
         .pay-button {
             display: block;
@@ -617,7 +629,7 @@
             text-decoration: none;
             margin-top: 20px;
         }
-
+        
         .pay-button:hover {
             background-color: #45a049;
         }
@@ -702,7 +714,10 @@
         Total Tagihan: Rp. 84.000
     </div>
 
-    <a href="#" class="pay-button">Bayar</a>
+    <div class="payment-button">
+      <a href="#" class="pay-button">Bayar</a>
+    </div>
+  </div>
   </div>
 </div>
     <nav class="bottom-nav">

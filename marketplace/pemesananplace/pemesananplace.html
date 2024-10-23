@@ -666,6 +666,14 @@
         .payment-button {
             text-align: center;
             margin-top: 20px;
+            display: flex;
+            padding: 10px;
+            background-color: #f4f7f1;
+            border-radius: 8px;
+            position: fixed;
+            bottom: 4rem; /* Adjusting to place it above the bottom navigation */
+            width: calc(100% - 250px); /* Account for sidebar width */
+            z-index: 1000;
         }
 
         .payment-button button {
@@ -676,6 +684,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            
         }
 
 
